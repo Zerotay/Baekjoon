@@ -27,3 +27,15 @@ all :
 	gcc 7_2908.c
 	./a.out
 	rm a.out
+8 :
+	gcc 8_5622.c
+	./a.out
+	rm a.out
+9 :
+	gcc 9_2941.c
+	./a.out
+	rm a.out
+10 :
+	gcc 10_1316.c
+	./a.out
+	rm a.out

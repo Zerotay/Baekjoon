@@ -20,3 +20,15 @@ all :
 	gcc 5_10250.c
 	./a.out
 	rm a.out
+6 :
+	gcc 6_2775.c
+	./a.out
+	rm a.out
+7 :
+	gcc 7_2839.c
+	./a.out
+	rm a.out
+8 :
+	gcc 8_10757.c
+	./a.out
+	rm a.out

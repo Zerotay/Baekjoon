@@ -16,3 +16,11 @@ all :
 	gcc 4_1929.c
 	./a.out
 	rm a.out
+5 :
+	gcc 5_4948.c
+	./a.out
+	rm a.out
+6 :
+	gcc 6_9020.c
+	./a.out
+	rm a.out

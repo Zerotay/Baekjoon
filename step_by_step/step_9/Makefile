@@ -16,3 +16,7 @@ all :
 	gcc 4_2447.c
 	./a.out
 	rm a.out
+5 :
+	gcc 5_11729.c
+	./a.out
+	rm a.out

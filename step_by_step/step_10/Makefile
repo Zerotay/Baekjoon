@@ -16,3 +16,9 @@ all :
 	gcc 4_1018.c
 	./a.out
 	rm a.out
+5 :
+	gcc 5_1436.c
+	./a.out
+	rm a.out
+5p :
+	python 5_1436.py

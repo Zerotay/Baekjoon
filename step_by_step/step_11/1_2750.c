@@ -1,26 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void	swap(int **arr, int i, int j)
+void	swap(int *arr, int i, int j)
 {
 	int	tmp;
 
-	tmp = (*arr)[i];
-	(*arr)[i] = (*arr)[j];
-	(*arr)[j] = tmp;
+	tmp = arr[i];
+	arr[i] = arr[j];
+	arr[j] = tmp;
 }
 
-int	*sort(int *arr, int i, int j)
+void sort(int *arr, int i, int j)
 {
 	int	pivot, k, l;
 
 	if (j - i < 0)
-		return (arr);
+		return ;
 	if (j - i == 1)
 	{
 		if (arr[i] > arr[j])
-			swap(&arr, i , j);
-		return (arr);
+			swap(arr, i , j);
+		return ;
 	}
 	pivot = i;
 	k = i + 1;
@@ -32,16 +32,16 @@ int	*sort(int *arr, int i, int j)
 		while (arr[pivot] < arr[l])
 			l--;
 		if (k < l)
-			swap(&arr, k, l);
+			swap(arr, k, l);
 		else
 		{
-			swap(&arr, pivot, l);
+			swap(arr, pivot, l);
 			break ;
 		}
 	}
-	arr = sort(arr, i, l - 1);
-	arr = sort(arr, l + 1, j);
-	return (arr);
+	sort(arr, i, l - 1);
+	sort(arr, l + 1, j);
+	return ;
 }
 
 int	main()
@@ -54,7 +54,7 @@ int	main()
 		return (0);
 	for(int i = 0; i < n; i++)
 		scanf("%d", &arr[i]);
-	arr = sort(arr, 0, n - 1);
+	sort(arr, 0, n - 1);
 	for(int i = 0; i < n; i++)
 		printf("%d\n", arr[i]);
 	free(arr);

@@ -56,3 +56,6 @@ all :
 	gcc 14_1110.c
 	./a.out
 	rm a.out
+
+25304 :
+	python 25304.py

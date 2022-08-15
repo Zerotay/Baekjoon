@@ -16,3 +16,19 @@ all :
 	python 1932.py
 2579 :
 	python 2579.py
+1463 :
+	python 1463.py
+10844 :
+	python 10844.py
+2156 :
+	python 2156.py
+11053 :
+	python 11053.py
+11054 :
+	python 11054.py
+2565 :
+	python 2565.py
+9251 :
+	python 9251.py
+12865 :
+	python 12865.py

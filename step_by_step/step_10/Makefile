@@ -22,3 +22,8 @@ all :
 	rm a.out
 5p :
 	python 5_1436.py
+
+25501:
+	python 25501.py
+24060:
+	python 24060.py
